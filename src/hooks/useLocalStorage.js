@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export const useLocalStarage = (key, defaultValue) => {
+export const useLocalStorage = (key, defaultValue) => {
   // контроль стану
   const [state, setState] = useState(
     () => JSON.parse(localStorage.getItem(key)) ?? defaultValue

@@ -3,10 +3,10 @@ import { Section } from './Section/Section';
 import { ContactForm } from './ContactForm/ContactForm';
 import { Filter } from './Filter/Filter';
 import { ContactList } from './ContactList/ContactList';
-import { useLocalStarage } from 'hooks/useLocalStorage';
+import { useLocalStorage } from 'hooks/useLocalStorage';
 
 export const App = () => {
-  const [contacts, setContacts] = useLocalStarage('contacts', [
+  const [contacts, setContacts] = useLocalStorage('contacts', [
     { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
     { id: 'id-2', name: 'Hermione Kline', number: '443-89-12' },
     { id: 'id-3', name: 'Eden Clements', number: '645-17-79' },
